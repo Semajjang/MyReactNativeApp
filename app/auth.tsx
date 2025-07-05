@@ -140,6 +140,7 @@ export default function AuthScreen() {
     >
       <View style={styles.container}>
         <StatusBar style="dark" />
+        
         {/* Header */}
         <Animated.View 
           style={[
@@ -150,7 +151,7 @@ export default function AuthScreen() {
             }
           ]}
         >
-          <Text style={styles.title}>{isLogin ? 'Welcome Back' : 'Create Account'}</Text>
+          <Text style={styles.title}>{isLogin ? 'Welcome' : 'Create Account'}</Text>
           <Text style={styles.subtitle}>
             {isLogin ? 'Sign in to continue' : 'Sign up to get started'}
           </Text>
@@ -277,6 +278,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingTop: 60,
   },
+
   header: {
     alignItems: 'center',
     marginBottom: 40,

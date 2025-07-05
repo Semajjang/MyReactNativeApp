@@ -14,19 +14,19 @@ const facilities = [
     name: 'Barangay 123 Hall',
     address: '123 Sampaloc St, Tondo, Manila',
     details: 'Capacity: 300 people • 1.2 miles away',
-    image: require('../assets/images/icon.png'),
+    image: require('../assets/images/123hall.jpg'),
   },
   {
-    name: 'San Nicolas Covered Court',
-    address: 'San Nicolas, Manila',
+    name: 'Sports Activity & Evacuation Center',
+    address: 'JXM6+8H3, Rodriguez EXT, Tondo, Manila, Metro Manila',
     details: 'Capacity: 200 people • 1.5 miles away',
-    image: require('../assets/images/icon.png'),
+    image: require('../assets/images/sportsevac.jpg'),
   },
   {
-    name: 'Manila High School Gym',
-    address: 'Intramuros, Manila',
+    name: 'Delpan Sports Complex',
+    address: 'Delpan St, San Nicolas, Manila, Metro Manila',
     details: 'Capacity: 800 people • 2.0 miles away',
-    image: require('../assets/images/icon.png'),
+    image: require('../assets/images/delpan-sports.jpg'),
   },
 ];
 
@@ -62,14 +62,16 @@ export default function EmergencyFacilitiesScreen() {
               name: facility.name,
               address: facility.address,
               details: facility.details,
-              image: idx === 0 ? 'delpan-evacuation.jpg' : 'icon.png',
-              description: facility.description || '',
-              contact: facility.contact || '099999999',
-              hours: facility.hours || '24/7',
-              inPerson: facility.inPerson || 'N/A',
-              facebook: facility.facebook || 'N/A',
-              email: facility.email || 'N/A',
-              type: facility.type || 'Evacuation Center',
+              image: idx === 0 ? 'delpan-evacuation.jpg' : 
+                     idx === 1 ? '123hall.jpg' :
+                     idx === 2 ? 'sportsevac.jpg' : 'delpan-sports.jpg',
+              description: '',
+              contact: '099999999',
+              hours: '24/7',
+              inPerson: 'N/A',
+              facebook: 'N/A',
+              email: 'N/A',
+              type: 'Evacuation Center',
             }
           })}
         >

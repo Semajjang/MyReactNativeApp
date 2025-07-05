@@ -5,6 +5,9 @@ import FontAwesome from '@expo/vector-icons/FontAwesome';
 
 const imageMap: Record<string, any> = {
   'delpan-evacuation.jpg': require('../assets/images/delpan-evacuation.jpg'),
+  '123hall.jpg': require('../assets/images/123hall.jpg'),
+  'sportsevac.jpg': require('../assets/images/sportsevac.jpg'),
+  'delpan-sports.jpg': require('../assets/images/delpan-sports.jpg'),
   'icon.png': require('../assets/images/icon.png'),
 };
 
