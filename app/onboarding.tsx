@@ -26,9 +26,11 @@ export default function OnboardingScreen() {
         
         {/* Logo/Brand Section */}
         <View style={styles.logoContainer}>
-          <View style={styles.logoPlaceholder}>
-            <Text style={styles.logoText}>LOGO</Text>
-          </View>
+          <Image
+            source={require('../assets/images/appIcon.png')}
+            style={{ width: 120, height: 120, marginBottom: 20 }}
+            resizeMode="contain"
+          />
           <Text style={styles.appName}>FloodGuard</Text>
           <Text style={styles.tagline}>Early Warnings, Safer Communities</Text>
         </View>
